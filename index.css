@@ -17,7 +17,7 @@
     height: 700px;
     background-image: url(image/medium-shot-woman-holding-tablet.jpg);
     background-size: cover; 
-    /* opacity: 0.9; */
+    /* opacity: 0.35; */
     width: 100%;
 }
 .logo{
@@ -26,9 +26,11 @@
     font-size: 40px;
   font-weight: 700;
   padding: 30px;
+  position: relative;
   padding-left: 100px;
 }
 .homecontent{
+    position: relative;
     width: 100%;
     color: white;
     padding: 100px;
@@ -49,7 +51,7 @@
     padding-top: 20px;
     font-style: normal;
 }
-button{
+.btn{ 
     margin-top: 40px;
     margin-left: 360px;
     height: 40px;
@@ -197,4 +199,30 @@ width: 650px;
  .card2 button{
     /* margin-bottom: 200px; */
     margin-left: 180px;
+ }
+
+ .backg{
+   
+  min-height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: relative;   
+ }
+ .backg::before{
+    content: '';
+    background-image: url(image/medium-shot-woman-holding-tablet.jpg);
+    
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+position: absolute;
+right: 0;
+left: 0;
+bottom: 0;
+top: 0;
+opacity: 0.1;
+ }
+ .backg h2{
+ 
  }
