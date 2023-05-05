@@ -22,7 +22,7 @@ function closeSidebar(){
 
 var barChartOptions = {
     series: [{
-    data: [14,10,8,6,5,4,2]
+    data: [50000,100000,150000,200000,250000,300000]
   }],
     chart: {
     type: 'bar',
@@ -54,11 +54,11 @@ var barChartOptions = {
     show:false
   },
   xaxis: {
-    categories: ['Laptop','Phone','Monitor','Headphones','Camera'],
+    categories: ['Food','Communication','Rent','Transport','Medical bills','Entertainment'],
   },
   yaxis: {
     title: {
-        text: "Count"
+        text: "Amount spent in RWF"
     }
   }
   };
