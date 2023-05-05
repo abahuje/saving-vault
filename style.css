@@ -71,57 +71,23 @@ margin:20px;
  }
  .suggests .forgot{
     padding-top:10px;
-    color:rgba(250, 169, 8, 0.984);
+    color:white;
     cursor: pointer;
  }
- .homepage{
-    height: 700px;
-    background-image: url(image/medium-shot-woman-holding-tablet.jpg);
-    background-size: cover; 
-    /* opacity: 0.35; */
-    width: 100%;
-}
-.logo{
-    color: rgb(220, 213, 10);
-    font-family: 'clicker script',cursive;
-    font-size: 40px;
-  font-weight: 700;
-  padding: 30px;
-  position: relative;
-  padding-left: 100px;
-}
-.homecontent{
-    position: relative;
-    width: 100%;
-    color: white;
-    padding: 100px;
-    font-family:"poppins" sans-serif;
-    font-weight: 700;
-}
-.homecontent h1{
-    font-size: 50px;
-
-}
-.homecontent h1 span{
-    color: rgba(238, 172, 5, 0.76);
-    font-style: italic;
-    font-weight: 900;
-}
-.homecontent p{
+ .form h4{
+    padding-top: 40px;
+    font-family: poppins;
     font-size: 25px;
-    padding-top: 20px;
-    font-style: normal;
+    font-weight: 700;
+    color: white;
+    text-align: center;
 }
-.btn{ 
-    margin-top: 40px;
-    margin-left: 360px;
-    height: 40px;
-    width: 30%;
-   background:linear-gradient(rgba(255, 189, 8, 0.956),rgb(203, 201, 177));
-   border-radius: 20px;
-   border: 1px solid white;
-   color: white;
-   font-family: 700;
-   font-size: 20px;
-box-shadow:  0 0 20px rgb(48, 46, 77, 0.25);
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color:gold;
+transform: 0.6s;
+box-shadow: 0 0 140px rgb(29, 29, 29); 
 }
