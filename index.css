@@ -55,6 +55,7 @@
     margin-top: 40px;
     margin-left: 360px;
     height: 40px;
+    cursor: pointer;
     width: 30%;
    background:linear-gradient(rgba(255, 189, 8, 0.956),rgb(203, 201, 177));
    border-radius: 20px;
