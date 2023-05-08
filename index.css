@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;300;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,700&display=swap');
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --tex-black-900:#302e4d;
+    --tex-black-700:#504e70;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ .homepage{
+    height: 700px;
+    background-image: url(image/medium-shot-woman-holding-tablet.jpg);
+    background-size: cover; 
+    /* opacity: 0.35; */
+    width: 100%;
+}
+.logo{
+    color: rgb(220, 213, 10);
+    font-family: 'clicker script',cursive;
+    font-size: 40px;
+  font-weight: 700;
+  padding: 30px;
+  position: relative;
+  padding-left: 100px;
+}
+.homecontent{
+    position: relative;
+    width: 100%;
+    color: white;
+    padding: 100px;
+    font-family:"poppins" sans-serif;
+    font-weight: 700;
+}
+.homecontent h1{
+    font-size: 50px;
+
+}
+.homecontent h1 span{
+    color: rgba(238, 172, 5, 0.76);
+    font-style: italic;
+    font-weight: 900;
+}
+.homecontent p{
+    font-size: 25px;
+    padding-top: 20px;
+    font-style: normal;
+}
+.btn{ 
+    margin-top: 40px;
+    margin-left: 360px;
+    height: 40px;
+    width: 30%;
+   background:linear-gradient(rgba(255, 189, 8, 0.956),rgb(203, 201, 177));
+   border-radius: 20px;
+   border: 1px solid white;
+   color: white;
+   font-family: 700;
+   font-size: 20px;
+box-shadow:  0 0 20px rgb(48, 46, 77, 0.25);
+}
+.aboutpage{
+    /* padding: 80px; */
+    width: 100%;
+}
+.aboutcontent h1{
+text-align: center;
+color: var(--tex-black-700);
+font-weight: bold;
+font-size: 30px;
+margin-top: 20px;
+text-decoration: underline rgb(233, 175, 29);
+}
+.aboutcontent p{
+    font-size: 20px;
+    padding: 40px;
+    padding-left: 80px;
+    color:#111117;
+font-weight: 400;
+line-height: 30px;
+}
+.teamcard{
+    margin-top: 20px;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.team h1{
+    text-align: center;
+    color: var(--tex-black-700);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    text-decoration: underline rgb(233, 175, 29);
+}
+.row{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.image {
+     /* background-image: url(image/medium-shot-woman-holding-tablet.jpg); */
+     height: 300px;
+     display: block;
+     margin:auto;
+    
+    width: 250px; 
+    position: relative;
+    margin-left: 70px;
+    margin-top: 20px;
+    
+}
+img{
+    /* border-radius: 50%; */
+    width: 100%;
+    height: 300px;
+    /* display: block; */
+    /* margin: auto; */
+}
+   
+.contentimage{
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(230, 222, 222, 0.6);
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    opacity: 0;
+    transition: 0.6s;
+    
+}
+.contentimage:hover{
+    opacity: 1; 
+}
+.contentimage h2{
+    font-size: 20px;
+    padding: 10px;
+    color: #302e4d;
+}
+.contentimage p{
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 400;
+}
+.contactcontent h1{
+    text-align: center;
+    color: var(--tex-black-700);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    text-decoration: underline rgb(233, 175, 29); 
+}
+.contactpage{
+    background-color:rgb(237, 235, 235);
+    margin-top: -202px;
+    
+}
+.contactcontent h3{
+   padding: 20px; 
+   text-align: center;
+   /* justify-content: space-around; */
+}
+.cards{
+    display: flex;
+    margin-left: 80px;
+   
+}
+.card1 img{
+height: 400px;
+width: 650px;
+
+}
+.card2{
+    margin-left: 35px;
+    line-height: 60px;
+}
+.card2 input{
+    width: 500px;
+    height: 40px;
+    border: 1px solid rgb(195, 191, 191);
+}
+.card2 textarea{
+    width: 500px;
+    padding-top: 10px;
+    margin-top: 10px;
+    /* height: 40px; */
+    border: 1px solid rgb(186, 185, 185);
+
+}
+ .card2 button{
+    /* margin-bottom: 200px; */
+    margin-left: 180px;
+ }
+
+ .backg{
+   
+  min-height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: relative;   
+ }
+ .backg::before{
+    content: '';
+    background-image: url(image/medium-shot-woman-holding-tablet.jpg);
+    
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+position: absolute;
+right: 0;
+left: 0;
+bottom: 0;
+top: 0;
+opacity: 0.1;
+ }
+ .backg h2{
+ 
+ }
