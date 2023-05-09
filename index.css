@@ -55,6 +55,7 @@
     margin-top: 40px;
     margin-left: 360px;
     height: 40px;
+    cursor: pointer;
     width: 30%;
    background:linear-gradient(rgba(255, 189, 8, 0.956),rgb(203, 201, 177));
    border-radius: 20px;
@@ -74,7 +75,19 @@ color: var(--tex-black-700);
 font-weight: bold;
 font-size: 30px;
 margin-top: 20px;
-text-decoration: underline rgb(233, 175, 29);
+/* text-decoration: underline rgb(233, 175, 29); */
+}
+.aboutcontent h1::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom:-16%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50Px;
+    border-radius: 2px;
+    background-color: #fbb608;
+ 
 }
 .aboutcontent p{
     font-size: 20px;
@@ -95,7 +108,21 @@ line-height: 30px;
     font-weight: bold;
     font-size: 30px;
     margin-top: 20px;
-    text-decoration: underline rgb(233, 175, 29);
+    /* text-decoration: underline rgb(233, 175, 29); */
+}
+.team h1::after{
+
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom:-16%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50Px;
+        border-radius: 2px;
+        background-color: #fbb608;
+     
+
 }
 .row{
     width: 100%;
@@ -162,67 +189,120 @@ img{
 .contactpage{
     background-color:rgb(237, 235, 235);
     margin-top: -202px;
-    
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    padding: 20px 100px;
+     
 }
-.contactcontent h3{
-   padding: 20px; 
-   text-align: center;
-   /* justify-content: space-around; */
-}
-.cards{
-    display: flex;
-    margin-left: 80px;
-   
-}
-.card1 img{
-height: 400px;
-width: 650px;
+.contactpage h1{
+ text-align: center;
+color: var(--tex-black-700);
+font-weight: bold;
+font-size: 30px;
+margin-top: 20px;
+/* text-decoration: underline rgb(233, 175, 29); */
 
 }
-.card2{
-    margin-left: 35px;
-    line-height: 60px;
-}
-.card2 input{
-    width: 500px;
-    height: 40px;
-    border: 1px solid rgb(195, 191, 191);
-}
-.card2 textarea{
-    width: 500px;
-    padding-top: 10px;
-    margin-top: 10px;
-    /* height: 40px; */
-    border: 1px solid rgb(186, 185, 185);
-
-}
- .card2 button{
-    /* margin-bottom: 200px; */
-    margin-left: 180px;
- }
-
- .backg{
-   
-  min-height: 100vh;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  position: relative;   
- }
- .backg::before{
+.contactpage h1::after{
     content: '';
-    background-image: url(image/medium-shot-woman-holding-tablet.jpg);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50Px;
+    border-radius: 2px;
+    background-color: #fbb608;
+}
+.contactpage h3{
+        padding: 20px; 
+        text-align: center;
+        justify-content: space-around;
+     } 
+
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    margin-left: 140px;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    box-shadow:  0 0 20px rgb(48, 46, 77, 0.25); 
+}
+
+.left img{
+height: 350px;
+width: 400px;
+
+}
+.right{
+   padding: 25px 40px;
+}
+ .right h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+ }
+ .right h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50Px;
+    border-radius: 2px;
+    background-color: #fbb608;
+ }
+ .field{
+    width: 350px;
+    padding: 0.5rem 1rem;
+    background-color: rgba(230, 230, 230,0.6);
+    outline: none;
+    border: none;
+    border: 1px solid rgba(0,0,0,0,0);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 3px;
+ }
+ .field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
     
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-position: absolute;
-right: 0;
-left: 0;
-bottom: 0;
-top: 0;
-opacity: 0.1;
  }
- .backg h2{
+ .field:focus{
+    background-color: #fff;
+    border: 2px solid gray;
+
+ }
+.field textarea{
+    height: 2000px;
+ }
+ .butto{
+    margin-top:20px;
+    margin-left:0px;
+    height: 40px;
+    cursor: pointer;
+    width: 30%;
+   background:linear-gradient(rgba(255, 189, 8, 0.956),rgb(203, 201, 177));
+   border-radius: 20px;
+   border: 1px solid white;
+   color: white;
+   font-family: 700;
+   font-size: 20px;
+    /* margin-left: 20px; */
+    /* font-size: 20px; */
+ }
+ @media screen and (max-width:850px){
+  .contact-box{
+    grid-template-columns:1fr;
+  } 
+  .left{
+    height:200px;
+  } 
+ }
+
  
- }

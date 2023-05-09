@@ -91,3 +91,7 @@ a:hover{
 transform: 0.6s;
 box-shadow: 0 0 140px rgb(29, 29, 29); 
 }
+a i{
+    padding-left: 300px;
+    margin-top: 20px;
+}

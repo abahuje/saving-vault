@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGISTRATION</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   
    
-    <div class="form">
+    <div class="form" onsubmit="loginfunt()">
+        <a href="index.html" class="active"> <i class="fa fa-home"></i></a>
         <h3>Register Now</h3>
 <div class="login">
- <input type="text" placeholder="Username">
- <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <input type="password" placeholder="Comfirm Password">
-    <button>Register</button>
+ <input type="text" placeholder="Username" id="username" name="username">
+ <input type="email" placeholder="Email" id="email" name="email">
+    <input type="password" placeholder="Password" id="password" name="password">
+    <input type="password" placeholder="Comfirm Password" id="comfirm" name="comfirm">
+    <button onclick="singup()">Register</button>
 </div>
 <div class="suggests">
     <div class="remember">
-        <input type="checkbox" checked>
+        <input type="checkbox">
         <span>Policy and Term</span>
     </div>
     <div class="forgot">
@@ -30,5 +32,7 @@
     </div>
 </div>
     </div>
+    <script src="index.js">
+    </script>
 </body>
 </html>
