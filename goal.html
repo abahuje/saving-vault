@@ -7,27 +7,32 @@
     <title>Saving Project</title>
     <link rel="stylesheet" href="goal.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
 </head>
 <body>
     <div class="all">
         <div class="dash">
+            <h2>vault</h2>
             <div class="search">
                 <h3>search anything...</h3>
+            </div>
+            <div class="plus">
+                <i class='bx bx-plus'></i>
             </div>
             <div class="icon">
             <i class='bx bx-menu'></i>
         </div>
         </div>
-        <div class="dash2">
-            <i class='bx bxs-dashboard'></i>
-            <i class='bx bxs-home'></i>
-            <i class='bx bxs-user-account' ></i>
-            <i class='bx bxs-flag-checkered' ></i>
-            <i class='bx bxs-video-recording' ></i>
+        <div class="dash2"><br><br>
+            <div class="dot2">
+             <h3> <i class='bx bxs-dashboard'></i> Dashboard</h3><br><br>
+            </div>
+        <div class="dot">
+           <h3> <i class='bx bxs-home'></i> Home</h3><br><br>
+           <h3> <i class='bx bxs-user-account' ></i> Account</h3><br><br> 
+           <h3> <i class='bx bxs-flag-checkered' ></i> Goal</h3><br><br> 
+            <h3> <i class='bx bxs-video-recording' ></i> Recording</h3>
+        </div>
+            
             <div class="pro">
                 <button>UPGRADE TO PRO</button>
             </div>
@@ -44,41 +49,53 @@
         </div>
         <div class="box2">
             <!-- <i class='bx bx-dollar'></i> -->
-            <input type="text" name="write here your goal" placeholder="write here your goal">
+            <input type="text" id="word" name="write here your goal" placeholder="write here your goal">
         </div>
         <div class="box3">
+            <div class="ball3">
+            </div>
             <h2>AMOUNT</h2>
         </div>
         <div class="box4">
             <div class="rwf">
-                <input type="number" name="rwf" placeholder="frw">
+                <input type="number" id="word" name="frw"  placeholder="frw">
             </div>
         </div>
         <div class="box5">
+            <h2>MONTHLY</h2>
+            <div class="ball5">
+                
+            </div>
             
             <div class="boss">
                 <input type="number" name="rwf" placeholder="frw">
             </div>
             
         </div>
-        
+            <!-- <h2>PERIOD</h2> -->
+        <div class="box6">
             
-            <h2>PERIOD</h2>
-        
-        
-        <div class="box5"></div>
-        <div class="box6"></div>
+        </div>
         <div class="box7">
             <div class="ball7">
-
+                <h2>PERIOD</h2> 
             </div>
         </div>
-        <div class="box8"></div>
-        <div class="box9">
-            <h2>your goal w</h2>
+        <div class="box8">
+            <div class="boss1">
+                <input type="month" name="rwf" placeholder="frw">
+            </div>
         </div>
+        <div class="box9">
+            <h2>your goal will be displayed here</h2>
+            <p id="demo">saving vault</p> 
+        </div>
+        <div class="send">
+          <button type="submit" onclick="showWord()">send</button>
+          
+       </div>
     </div> 
 
- <script src="index.js"></script>   
+ <script src="goal.js"></script>   
 </body>
 </html>

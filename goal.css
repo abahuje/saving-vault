@@ -36,6 +36,26 @@ body{
     padding-top: 30px;
     
 }
+.dash h2{
+    padding-left: 30px;
+    position: absolute;
+    padding-top: 10px;
+    color: rgb(114, 114, 9);
+    font-size: 35px;
+}
+.dot{
+    padding-top: 50px;
+}
+.dot2{
+    padding-top: 20px;
+}
+.plus{
+    position: absolute;
+    padding-left: 95%;
+    font-size: 40px;
+    font-style: oblique;
+    padding-top: 10px;
+}
 
 button{
     height: 25px;
@@ -62,7 +82,7 @@ button{
     /* background: white; */
     position: absolute;
     margin-top: 160px;
-    margin-left: 410px;
+    margin-left: 420px;
     border-radius: 15px;
 }
 .box3{
@@ -80,7 +100,7 @@ button{
     /* background: white; */
     position: absolute;
     margin-top: 260px;
-    margin-left: 410px;
+    margin-left: 420px;
     border-radius: 15px;
 }
 .box5{
@@ -88,19 +108,20 @@ button{
     width: 150px;
     background: white;
     position: absolute;
-    margin-top: 340px;
+    margin-top: 360px;
     margin-left: 220px;
     border-radius: 15px;
 }
-.box6{
+/* .box6{
     height: 60px;
     width: 250px;
-    z-index: 0;
-    position: absolute;
+     z-index: 0; 
+     position: absolute;
+    background: rebeccapurple;
     margin-top: 340px;
-    margin-left: 410px;
+    margin-left: 440px;
     border-radius: 15px;
-}
+}  */
 .box7{
     height: 60px;
     width: 150px;
@@ -110,27 +131,31 @@ button{
     margin-left: 220px;
     border-radius: 15px;
 }
-/* .box8{
+.box8{
     height: 60px;
     width: 250px;
-    background: white;
+    /* background: white; */
     position: absolute;
-    margin-top: 240px;
+    margin-top: -60px;
     margin-left: 410px;
     border-radius: 15px;
-} */
+}
 .box9{
-    height: 150px;
-    width: 500px;
+    /* height: 150px; */
+    width: 510px; 
     background: white;
-    position: absolute;
-    margin-top: 100px;
-    
-    margin-left: 190px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 210px;
     border-radius: 15px;
 }
+#demo{
+    position: relative;
+    top: -5rem;
+    padding-left: 40px;
+}
 .ball1{
-    background: green;
+    background: rgb(109, 214, 109);
     border-radius: 0px 5px 5px 0px;
     height: 50px;
     width: 5px;
@@ -138,8 +163,29 @@ button{
     margin-left: 10px;
     margin-top: 5px;
 }
+
+.ball3{
+    background: aqua;
+    border-radius: 0px 5px 5px 0px;
+    height: 50px;
+    width: 5px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+.ball5{
+    background: yellow;
+    border-radius: 0px 5px 5px 0px;
+    height: 50px;
+    width: 5px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 7px;
+
+}
 .ball7{
-    background: red;
+    background: rgb(192, 101, 101);
     border-radius: 0px 5px 5px 0px;
     height: 50px;
     width: 5px;
@@ -168,6 +214,9 @@ button{
     padding-top: 28px;
     padding-left: 20px;
 }
+/* .ball5 h2{
+    padding-right: 100px;
+} */
 .rwf{
     width: 120px;
     height: 50px;
@@ -176,8 +225,19 @@ input{
     width: 300px;
     height: 50px;
     border-radius: 15px;
+    padding-left: 30px;
+    margin-bottom: 40px;
+    
 }
 .box5 h2{
+    position: absolute;
+    padding-left: 30px;
+    font-size: 20px;
+    padding-top: 20px;
+
+    
+}
+.box6 h2{
     position: relative;
     padding-left: 200px;
     font-size: 20px;
@@ -185,15 +245,37 @@ input{
 .boss{
     width: 120px;
     height: 50px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.boss1{
+    width: 120px;
+    height: 50px;
+    margin-left: 10px;
+    margin-bottom: 40px;
 }
 .boss input{
     width: 300px;
     height: 50px;
     border-radius: 15px;
     margin-left: 180px;
+    margin-bottom: -80px;
 }
 .box7 h2{
     font-size: 20px;
-    /* position: absolute; */
+    padding: 20px 15px;
     position: relative;
+}
+.box9 h2{
+    padding-left: 85px;
+    padding-bottom: 80px;
+    padding-top: -120px;
+}
+.send button{
+    margin-left: 350px;
+    margin-top: -50px;
+}
+.pro button{
+    margin-top: 80px;
+    position: absolute;
 }
