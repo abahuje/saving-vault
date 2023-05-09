@@ -1,46 +1,6 @@
-// function sugup(e){
-//     event.preventDefault();
-
-//     var username = document.getElementById("username").value;
-//     // var Email =document.getElementById("email").value
-// var passwords = document.getElementById("password").value;
-// // var Comfirm =document.getElementById("comfirm");
-// let Users={
-//         username:username,
-//         // emaili :email,
-//         password:pass,
-//         // comfirm:comfirms};
-// };
-
-// function LoginFuction(e){
-// // event.preventDefault();
-// var logo = document.querySelector(".butto")
-// var username = document.getElementById("user").value;
-//     // var Email =document.getElementById("email").value
-// var passwords = document.getElementById("passwords").value;
-// // var Comfirm =document.getElementById("comfirm").value;
-// console.log(username)
-// var result = document.getElementById("result")
-// localStorage.setItem()
-// var user = localStorage.getItem(UserNames);
-// var data = JSON.parse(user);
-// if(user==null){
-// result.innerHTML="wrong Username"
-// }
-// else if(user=="user1" && passwords=="1234"){
-// // result.innerHTML="logged in"
-// window.location.href="register.html"
-// }
-// else{
-// result.innerHTML= "wrong password"
-// }
-
-// }
-
-// // logo.addeventListern("click",LoginFuction)
 
 function singup(e){
-    // event.preventDefault();
+    e.preventDefault();
     let userdata = JSON.parse(localStorage.getItem('Users'))|| [];
     var username = document.getElementById("username").value;
     var email =document.getElementById("email").value
