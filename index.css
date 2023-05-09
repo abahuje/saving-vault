@@ -75,7 +75,19 @@ color: var(--tex-black-700);
 font-weight: bold;
 font-size: 30px;
 margin-top: 20px;
-text-decoration: underline rgb(233, 175, 29);
+/* text-decoration: underline rgb(233, 175, 29); */
+}
+.aboutcontent h1::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom:-16%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50Px;
+    border-radius: 2px;
+    background-color: #fbb608;
+ 
 }
 .aboutcontent p{
     font-size: 20px;
@@ -96,7 +108,21 @@ line-height: 30px;
     font-weight: bold;
     font-size: 30px;
     margin-top: 20px;
-    text-decoration: underline rgb(233, 175, 29);
+    /* text-decoration: underline rgb(233, 175, 29); */
+}
+.team h1::after{
+
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom:-16%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50Px;
+        border-radius: 2px;
+        background-color: #fbb608;
+     
+
 }
 .row{
     width: 100%;
@@ -177,8 +203,19 @@ color: var(--tex-black-700);
 font-weight: bold;
 font-size: 30px;
 margin-top: 20px;
-text-decoration: underline rgb(233, 175, 29);
+/* text-decoration: underline rgb(233, 175, 29); */
 
+}
+.contactpage h1::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50Px;
+    border-radius: 2px;
+    background-color: #fbb608;
 }
 .contactpage h3{
         padding: 20px; 
