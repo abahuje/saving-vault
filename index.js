@@ -76,7 +76,7 @@ const login = () => {
             window.location.href="dashboard.html"
           break;
         }else{
-            return alert('Invalid credentials')
+            return alert('Invalid credentials ⚠️⚠️')
         }
       }
     } else {
