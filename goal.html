@@ -4,98 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saving Project</title>
-    <link rel="stylesheet" href="goal.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="all">
-        <div class="dash">
-            <h2>vault</h2>
-            <div class="search">
-                <h3>search anything...</h3>
-            </div>
-            <div class="plus">
-                <i class='bx bx-plus'></i>
-            </div>
-            <div class="icon">
-            <i class='bx bx-menu'></i>
-        </div>
-        </div>
-        <div class="dash2"><br><br>
-            <div class="dot2">
-             <h3> <i class='bx bxs-dashboard'></i> Dashboard</h3><br><br>
-            </div>
-        <div class="dot">
-           <h3> <i class='bx bxs-home'></i> Home</h3><br><br>
-           <h3> <i class='bx bxs-user-account' ></i> Account</h3><br><br> 
-           <h3> <i class='bx bxs-flag-checkered' ></i> Goal</h3><br><br> 
-            <h3> <i class='bx bxs-video-recording' ></i> Recording</h3>
-        </div>
-            
-            <div class="pro">
-                <button>UPGRADE TO PRO</button>
-            </div>
-        </div>
-        </div>
-        
+    <div class="header">
+        <p class="menu"><i class='bx bx-menu' onclick="menu()"></i></p>
+        <h2 class="logo">S-vault</h2>
+        <form action="" class="search-bar">
+            <input type="text" placeholder="search anything..." name="" class="input1">
+            <i class='bx bx-search-alt-2'></i>
+        </form>
+        <span class="settings"><i class='bx bx-cog'></i></span>
+        <span class="notification"><i class='bx bx-bell'></i></span>
+        <h2 class="plus"><a href="./expense.html">+</a></h2>
+    </div>
+    <div class="dashboard">
+        <p class="dash"><span><i class='bx bxs-dashboard'></i></span><span class="span1"> <a href="./dashboard.html">Dashboard</a></span></p>
+        <p class="dash"><span><i class='bx bxs-home'></i></span><span class="span2"> <a href="./index.html">Home</a></span></p>
+        <p class="dash"><span><i class='bx bxs-user-account'></i></span><span class="span3"> <a href="./account.html">Account</a></span></p>
+        <p class="dash"><span><i class='bx bxs-flag-checkered'></i></span><span class="span4"> <a href="./goal.html">Goal</a></span></p>
+        <p class="dash"><span><i class='bx bx-clipboard'></i></span><span class="span5"> <a href="./records.html">Record</a></span></p>
+    <button class="button1">UPGRADE TO PRO</button>
     </div>
     <div class="box">
-        <div class="box1">
-            <div class="ball1">
-
-            </div>
-            <h2>GOAL</h2>
+    <div class="box1">
+        <div class="ball1">
         </div>
+        <h2>GOAL</h2>
+    </div>
+        <input type="text" id="word" name="write here your goal" placeholder="write here your goal">
+    </div>
         <div class="box2">
-            <!-- <i class='bx bx-dollar'></i> -->
-            <input type="text" id="word" name="write here your goal" placeholder="write here your goal">
+            <div class="ball2">
+            </div>
+            <h2>AMOUNT</h2>
+        </div>
+        <div class="input2">
+            <input type="number" id="word" name="$" placeholder="$" class="input2">
         </div>
         <div class="box3">
             <div class="ball3">
             </div>
-            <h2>AMOUNT</h2>
+            <h2>MONTHLY</h2>
+        </div>
+        <div class="input3">
+            <input type="number" id="word" name="$" placeholder="$" class="input3">   
         </div>
         <div class="box4">
-            <div class="rwf">
-                <input type="number" id="word" name="frw"  placeholder="frw">
+            <div class="ball4">
             </div>
+            <h2>PERIOD</h2>
         </div>
+        <div class="input4">
+            <input type="month" id="word" name="$" placeholder="$" class="input4">
+        </div>
+        
+         <button class="button2">display</button>
+        
+        
         <div class="box5">
-            <h2>MONTHLY</h2>
-            <div class="ball5">
-                
-            </div>
-            
-            <div class="boss">
-                <input type="number" name="rwf" placeholder="frw">
-            </div>
-            
+            <h2>Your information will be displayed here</h2>
         </div>
-            <!-- <h2>PERIOD</h2> -->
-        <div class="box6">
-            
-        </div>
-        <div class="box7">
-            <div class="ball7">
-                <h2>PERIOD</h2> 
-            </div>
-        </div>
-        <div class="box8">
-            <div class="boss1">
-                <input type="month" name="rwf" placeholder="frw">
-            </div>
-        </div>
-        <div class="box9">
-            <h2>your goal will be displayed here</h2>
-            <p id="demo">saving vault</p> 
-        </div>
-        <div class="send">
-          <button type="submit" onclick="showWord()">send</button>
-          
-       </div>
-    </div> 
-
- <script src="goal.js"></script>   
+    <script src="./index.js"></script>
 </body>
 </html>
