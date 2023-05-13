@@ -101,12 +101,17 @@ body{
     position: absolute;
 }
 button{
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    background-color: orange;
-    margin-left: 10px;
-    margin-top: 50px;
+    margin-top:20px;
+    margin-left:30px;
+    height: 40px;
+    cursor: pointer;
+    width: 70%;
+   background:linear-gradient(rgba(255, 189, 8, 0.956),rgb(203, 201, 177));
+   border-radius: 20px;
+   border: 1px solid white;
+   color: white;
+   font-family: 700;
+   font-size: 16px;
 }
 
 .main-container{
@@ -236,4 +241,21 @@ button{
     z-index: 100;
     font-weight: 700;
     font-size: 2em;
+}
+.sidebar-list a{
+    text-decoration: none;
+    color: black;
+    line-height: 60px; 
+    /* margin-left: 35px; */
+    
+}
+.sidebar-list a li{
+    margin-left: 30px;
+}
+.sidebar-list a li:hover{
+    color: #f5b74f;
+    font-size: 20px;
+    margin-left:30px;
+    transform: scale(0.6s);
+   
 }

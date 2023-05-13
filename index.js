@@ -33,12 +33,10 @@ const login = () => {
       for (let i = 0; i < userData.length; i++) {
         if ((userData[i].username === data.userName) && (userData[i].password === data.passWord)) {
             localStorage.setItem('tempUser',JSON.stringify(data))
-            window.location.href="dashboard.html"
-          break;
-        }else{
-            return alert('Invalid credentials ⚠️⚠️')
+          return window.location.href="dashboard.html";
         }
       }
+      return alert('Invalid credentials ⚠️⚠️')
     } else {
       return alert ('please enter register some users');
     }

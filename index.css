@@ -81,7 +81,7 @@ margin-top: 20px;
     content: '';
     position: absolute;
     left: 50%;
-    bottom:-16%;
+    bottom:-17%;
     transform: translateX(-50%);
     height: 4px;
     width: 50Px;
@@ -115,7 +115,7 @@ line-height: 30px;
         content: '';
         position: absolute;
         left: 50%;
-        bottom:-16%;
+        bottom:-52%;
         transform: translateX(-50%);
         height: 4px;
         width: 50Px;
@@ -125,52 +125,42 @@ line-height: 30px;
 
 }
 .row{
-    width: 100%;
-    height: 100vh;
+    width: 20%;
+    height: 60vh;
     display: flex;
-    justify-content: baseline;
+    margin: 30px;
     align-items: center;
+    background-color: var(--bg-black-100);  
+  border: 1px solid var(--bg-black-50);
+  border-radius: 10px;
+  padding: 30px 15px;
+  
+  /* text-align: center; */
+  transition: all 0.3s ease;
+
 }
-.image {
-     /* background-image: url(image/medium-shot-woman-holding-tablet.jpg); */
+.row:hover{
+    box-shadow: 0 0 20px rgb(29, 29, 29); 
+}
+.image img {
      height: 300px;
-     display: block;
-     margin:auto;
+    border-radius: 50%;
+    width: 100%; 
+
     
-    width: 250px; 
-    position: relative;
-    margin-left: 70px;
-    margin-top: 20px;
-    
+} 
+.image img:hover{
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(249, 246, 237);
+    transition: 0.6s; 
 }
-img{
-    /* border-radius: 50%; */
-    width: 100%;
-    height: 300px;
-    /* display: block; */
-    /* margin: auto; */
-}
-   
-.contentimage{
-    width: 100%;
-    height: 300px;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: rgba(230, 222, 222, 0.6);
-    display: flex;
-    justify-content: center;
-    flex-direction:column;
-    opacity: 0;
-    transition: 0.6s;
-    
-}
-.contentimage:hover{
-    opacity: 1; 
+
+.contentimage h2 span{
+    color: #fbb608
 }
 .contentimage h2{
     font-size: 20px;
-    padding: 10px;
+    /* padding: 10px; */
     color: #302e4d;
 }
 .contentimage p{
@@ -184,11 +174,22 @@ img{
     font-weight: bold;
     font-size: 30px;
     margin-top: 20px;
-    text-decoration: underline rgb(233, 175, 29); 
+    /* text-decoration: underline rgb(233, 175, 29);  */
+}
+.contactcontent h1::after{
+   content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50Px;
+    border-radius: 2px;
+    background-color: #fbb608; 
 }
 .contactpage{
-    background-color:rgb(237, 235, 235);
-    margin-top: -202px;
+   
+    margin-top: 2px;
     position: relative;
     /* display: flex; */
     justify-content: center;
@@ -210,7 +211,7 @@ margin-top: 20px;
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom:87%;
     transform: translateX(-50%);
     height: 4px;
     width: 50Px;
@@ -231,18 +232,19 @@ margin-top: 20px;
     align-items: center;
     text-align: center;
     background-color: white;
-    box-shadow:  0 0 20px rgb(48, 46, 77, 0.25); 
+    box-shadow: 0 0 20px rgb(29, 29, 29);  
 }
 
 .left img{
-height: 350px;
-width: 400px;
+height: 380px;
+width: 440px;
 
 }
 .right{
    padding: 25px 40px;
 }
  .right h2{
+    color: var(--tex-black-700);
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;

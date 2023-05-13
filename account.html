@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saving Project</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./account.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="account.css">
 </head>
 <body>
     <div class="whole">
@@ -21,14 +25,26 @@
     <h2 class="plus"><a href="./expense.html">+</a></h2>
 </div>
 <div class="main">
-<div class="dashboard">
-    <p class="dash"><span><i class='bx bxs-dashboard'></i></span>Dashboard</p>
-    <p class="dash"><span><i class='bx bxs-home'></i></span>Home</p>
-    <p class="dash"><span><i class='bx bxs-user-account'></i></span>Account</p>
-    <p class="dash"><span><i class='bx bxs-flag-checkered'></i></span>Goal</p>
-    <p class="dash"><span><i class='bx bx-clipboard'></i></span>Record</p>
-<button>UPGRADE TO PRO</button>
-</div>
+<aside id="sidebar">
+        <div class="sidebar-title">
+          <!-- <div class="sidebar-brand">
+            <span class="material-icons-outlined"> energy_savings_leaf </span
+            >Saving vaults
+          </div> -->
+          <!-- <span class="material-icons-outlined" onclick="closeSidebar()">
+            close
+          </span> -->
+        </div>
+        <ul class="sidebar-list">
+<a href="index.html"><li><span class="material-icons-outlined"> home </span> Home</li></a>
+<a href=""><li><span class="material-icons-outlined"> people_alt </span>Account</li></a>
+<a href=""><li><span class="material-icons-outlined"> sports_score</span>Goal</li></a>
+<a href=""><li><span class="material-icons-outlined"> work </span> Records orders</li></a>
+<a href=""><li><span class="material-icons-outlined"> settings </span> settings</li></a>
+        </ul>
+          <button>UPGRADE TO PRO</button>
+       
+      </aside>
 <div class="main1">
     <div class="main2">
     <p class="bal">Initial Balance</p>
