@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./goal.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <div class="header">
         <p class="menu"><i class='bx bx-menu' onclick="menu()"></i></p>
@@ -21,52 +23,68 @@
         <h2 class="plus"><a href="./expense.html">+</a></h2>
     </div>
     <div class="dashboard">
-        <p class="dash"><span><i class='bx bxs-dashboard'></i></span><span class="span1"> <a href="./dashboard.html">Dashboard</a></span></p>
-        <p class="dash"><span><i class='bx bxs-home'></i></span><span class="span2"> <a href="./index.html">Home</a></span></p>
-        <p class="dash"><span><i class='bx bxs-user-account'></i></span><span class="span3"> <a href="./account.html">Account</a></span></p>
-        <p class="dash"><span><i class='bx bxs-flag-checkered'></i></span><span class="span4"> <a href="./goal.html">Goal</a></span></p>
-        <p class="dash"><span><i class='bx bx-clipboard'></i></span><span class="span5"> <a href="./records.html">Record</a></span></p>
-    <button class="button1">UPGRADE TO PRO</button>
+        <p class="dash"><span><i class='bx bxs-dashboard'></i></span><span class="span1"> <a
+                    href="./dashboard.html">Dashboard</a></span></p>
+        <p class="dash"><span><i class='bx bxs-home'></i></span><span class="span2"> <a
+                    href="./index.html">Home</a></span></p>
+        <p class="dash"><span><i class='bx bxs-user-account'></i></span><span class="span3"> <a
+                    href="./account.html">Account</a></span></p>
+        <p class="dash"><span><i class='bx bxs-flag-checkered'></i></span><span class="span4"> <a
+                    href="./goal.html">Goal</a></span></p>
+        <p class="dash"><span><i class='bx bx-clipboard'></i></span><span class="span5"> <a
+                    href="./records.html">Record</a></span></p>
+        <button class="button1">UPGRADE TO PRO</button>
     </div>
     <div class="box">
-    <div class="box1">
-        <div class="ball1">
+        <div class="box1">
+            <div class="ball1">
+            </div>
+            <h2>GOAL</h2>
         </div>
-        <h2>GOAL</h2>
+        <input type="text" id="goal" name="write here your goal" placeholder="write here your goal">
     </div>
-        <input type="text" id="word" name="write here your goal" placeholder="write here your goal">
+    <div class="box2">
+        <div class="ball2">
+        </div>
+        <h2>AMOUNT</h2>
     </div>
-        <div class="box2">
-            <div class="ball2">
-            </div>
-            <h2>AMOUNT</h2>
+    <div class="input2">
+        <input type="number" id="amount" name="$" placeholder="$" class="input2">
+    </div>
+    <div class="box3">
+        <div class="ball3">
         </div>
-        <div class="input2">
-            <input type="number" id="word" name="$" placeholder="$" class="input2">
+        <h2>MONTHLY</h2>
+    </div>
+    <div class="input3">
+        <input type="number" id="monthly" name="$" placeholder="$" class="input3">
+        <div style="position: absolute; right: -500px;">
+            <h3>Total</h3>
+            <h2 id="total">0</h2>
         </div>
-        <div class="box3">
-            <div class="ball3">
-            </div>
-            <h2>MONTHLY</h2>
+    </div>
+    <div class="box4">
+        <div class="ball4">
         </div>
-        <div class="input3">
-            <input type="number" id="word" name="$" placeholder="$" class="input3">   
+        <h2>PERIOD</h2>
+    </div>
+    <div class="input4">
+        <input type="month" id="month" name="$" placeholder="$" class="input4">
+    </div>
+
+    <button class="button2">display</button>
+
+
+    <div class="box5">
+        <h2>Your information will be displayed here</h2>
+        <div style="display: flex; justify-content: space-between;">
+            <h1>Goal</h1>
+            <h1>Amount</h1>
+            <h1>Monthly</h1>
+            <h1>Date</h1>
         </div>
-        <div class="box4">
-            <div class="ball4">
-            </div>
-            <h2>PERIOD</h2>
-        </div>
-        <div class="input4">
-            <input type="month" id="word" name="$" placeholder="$" class="input4">
-        </div>
-        
-         <button class="button2">display</button>
-        
-        
-        <div class="box5">
-            <h2>Your information will be displayed here</h2>
-        </div>
-    <script src="./index.js"></script>
+    </div>
+    <script src="./goal.js"></script>
 </body>
+
 </html>
